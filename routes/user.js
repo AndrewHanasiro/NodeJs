@@ -1,10 +1,9 @@
 const express = require("express");
-const router = express.Router();
-const Auth = require("../middleware/check-auth");
-
+const Auth = require("../middleware/jwt");
 const UserController = require("../controllers/user");
 
-// Handle incoming GET requests to /orders
+const router = express.Router();
+
 router.get("/", Auth, UserController.get_all);
 
 router.post("/", UserController.user_create);

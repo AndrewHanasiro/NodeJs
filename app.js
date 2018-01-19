@@ -5,6 +5,7 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
+//Routes import
 const userRoutes = require("./routes/user");
 
 mongoose.connect(
@@ -33,10 +34,8 @@ app.use((req, res, next) => {
   next();
 });
 
-// Routes which should handle requests
-app.use("/products", productRoutes);
-app.use("/orders", orderRoutes);
-app.use("/user", userRoutes);
+// Routes handle requests
+app.use("/v1/api/user", userRoutes);
 
 app.use((req, res, next) => {
   const error = new Error("Not found");

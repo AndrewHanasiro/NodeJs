@@ -1,11 +1,12 @@
 const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 const User = require("../models/user");
 
-export.get_all= (req, res, next) => {}
-export.user_create= (req, res, next) => {}
-export.user_get= (req, res, next) => {}
-export.user_update= (req, res, next) => {}
-export.user_delete= (req, res, next) => {}
+exports.get_all= (req, res, next) => {
+    console.log("getall");
+}
+exports.user_create= (req, res, next) => {}
+exports.user_get= (req, res, next) => {}
+exports.user_update= (req, res, next) => {}
+exports.user_delete= (req, res, next) => {}
