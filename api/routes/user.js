@@ -1,5 +1,6 @@
 const express = require('express');
 const Auth = require('../middleware/jwt');
+
 const UserController = require('../controllers/user');
 
 const router = express.router();
