@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "eslint": "eslint --fix './'",
-    "start": "nodemon server.js",
-    "tmp": "eslint --init"
+    "test": "nodemon server.js",
+    "start": "server.js"
   },
   "repository": {
     "type": "git",
