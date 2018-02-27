@@ -8,6 +8,16 @@ Node API Tutorial
 $ npm install
 ```
 
+- Make a file nodemon.json that contains
+```json
+{
+  "env": {
+    "MONGO_ATLAS_PW": "YOUR MONGO PASSWORD",
+    "JWT_KEY": "YOUR TOKEN PASSWORD"
+  }
+}
+```
+
 - Run Server
 ```shell
 $ npm start
